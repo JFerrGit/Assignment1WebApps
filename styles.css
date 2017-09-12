@@ -1,0 +1,9 @@
+.sub-header{
+	text-align: center;
+}
+table,td{
+	border: 1px solid black;
+	margin: auto;
+}
+
+table{margin-bottom: 20px;}

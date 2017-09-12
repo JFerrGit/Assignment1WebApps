@@ -3,11 +3,24 @@
 <head>
     <meta charset="UTF-8">
     <title>Chinese Food Land</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
 </head>
 <body>
     <h1>Chinese Food Land</h1>
+
+    <div id="navigation">
+    	<ul>
+    		<li><a href="#Dishes">Dishes</a></li>
+    		<li><a href="#soups">Soups</a></li>
+    		<li><a href="#rice">Rice</a></li>
+    		<li><a href="#meats">Meats</a></li>
+    		<li><a href="#ChineseMenu">Chinese Menu</a></li>
+    		<li><a href="#map">Map</a></li>
+    	</ul>
+    </div>
+
     <h2 id="Dishes">Dishes</h2>
-    <h3>Appetizers</h3>
+    <h3 class="sub-header">Appetizers</h3>
     <h4>Succulent, oriental delights made fresh to create the perfect start to a wholesome meal.</h4>
     <ul>
         <li>Egg Roll - Comes stuffed with pork, shrimp, or chicken.</li>
@@ -16,7 +29,7 @@
         <li>Shrimp Roll - Breaded with fresh shrimp caught locally.</li>
         <li>Fried Wonton - Pork filling with duck sauce.</li>
     </ul>
-    <h3>Soups</h3>
+    <h3 id="soups" class="sub-header">Soups</h3>
     <h4>Gourmet blends of traditional herbs and spices with fresh broth and stock prepared hourly.</h4>
     <ul>
         <li>Wonton Soup - Minced pork and wonton noodles in simmering broth.</li>
@@ -25,7 +38,7 @@
         <li>Vegetable Soup - Corn, carrots, broccoli, and vegetable broth.</li>
         <li>Seafood Soup - Crab and shrimp marinated in a seasoned saltwater broth.</li>
     </ul>
-    <h3>Fried Rice</h3>
+    <h3 id="rice" class="sub-header">Fried Rice</h3>
     <h4>Locally grown and freshly dried rice fried and served with a side of soy sauce.</h4>
     <ul>
         <li>Vegetable Fried Rice - Rice fried with mixed house vegetables for a green flavor.</li>
@@ -34,7 +47,7 @@
         <li>Beef Fried Rice - A more solid blend of beef and rice fried to taste.</li>
         <li>Shrimp Fried Rice - Rice with the flavor of the sea thanks to savory shrimp.</li>
     </ul>
-    <h3>Meats</h3>
+    <h3 id="meats" class="sub-header">Meats</h3>
     <h4>Sustainable slaughter with local, fresh fish, beef, and chicken, all roasted to perfection.</h4>
     <ul>
         <li>Orange Chicken - Chicken cooked and breaded in our signature orange sauce.</li>
@@ -43,6 +56,50 @@
         <li>Roasted Pork with Broccoli - Pork chops roasted with broccoli and seasoned, cooked tender.</li>
         <li>Kung Pao Shrimp - Classic seafood dish with signature sichuan sauce and white pepper.</li>
     </ul>
-    <img width="600" src="https://maps.googleapis.com/maps/api/staticmap?center=tampa,+FL&zoom=16&scale=1&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7Ctampa,+FL" alt="Google Map of tampa, FL">
+
+
+    <div id="ChineseMenu">
+    <h2>Chinese Menu</h2>
+    <table id="MenuTable">
+    	<thead>
+    		<td>Appetizers</td>
+    		<td>Entree's</td>
+    		<td>Sides</td>
+    	</thead>
+    	<tbody>
+    		<tr>
+	    		<td> 
+	    			<ul>
+				        <li>Egg Roll </li>
+				        <li>Fried Dumplings</li>
+				        <li>Spring Roll </li>
+				        <li>Shrimp Roll </li>
+				        <li>Fried Wonton</li>
+				    </ul>
+	    		</td>
+	    		<td>
+	    			<ul>
+				        <li>Orange Chicken</li>
+				        <li>Bejing Beef </li>
+				        <li>Beef with Broccoli</li>
+				        <li>Roasted Pork with Broccoli </li>
+				        <li>Kung Pao Shrimp </li>
+				    </ul>
+	    		</td>
+	    		<td>
+	    			<ul>
+				        <li>Vegetable Fried Rice </li>
+				        <li>Chicken Fried Rice </li>
+				        <li>Roasted Pork Fried Rice </li>
+				        <li>Chicken Noodle Soup </li>
+	        			<li>Vegetable Soup</li>
+	        			<li>Seafood Soup </li>
+				    </ul>
+	    		</td>
+    		</tr>
+    	</tbody>
+    </table>
+    </div>
+    <img id="map" width="600" src="https://maps.googleapis.com/maps/api/staticmap?center=tampa,+FL&zoom=16&scale=1&size=600x300&maptype=roadmap&format=png&visual_refresh=true&markers=size:mid%7Ccolor:0xff0000%7Clabel:1%7Ctampa,+FL" alt="Google Map of tampa, FL">
 </body>
 </html>
