@@ -1,7 +1,7 @@
 .sub-header{
 	text-align: center;
 }
-table,td{
+table.outer-table,td.inner-cell{
 	border: 1px solid black;
 	margin: auto;
 }
@@ -27,10 +27,21 @@ img.foodImage{
 #map{
 	height: 150px;
 	width: 300px;
+	display: block;
+	margin:auto;
+	margin-bottom: 30px;
 }
 
 h3.sub-header{
 	border-left: 5px solid blue;
 	background-color: lightblue;
 	margin-bottom: 0px;
+}
+td.english{
+	padding-left: 5px
+}
+
+#MenuTable{
+	display: block;
+	margin:auto;
 }
